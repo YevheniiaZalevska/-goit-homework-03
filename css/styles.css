@@ -12,6 +12,13 @@ address {
 
 .nav {
     background: var(--WHITE, #FFF);
+    display: flex;
+    justify-content: space-around;
+}
+
+.navv {
+    display: flex;
+    align-items: center;
 }
 
 .web {
@@ -78,9 +85,21 @@ ul {
     font-family: Roboto;
 }
 
+.adress-list-item-2 {
+    display: flex;
+    align-items: center;
+}
+
 .adress-list-type {
     color: #434455;
+    text-decoration: none;
 }
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
 
 /* section 1 */
  
@@ -108,7 +127,6 @@ h1 {
 }
 
 .button-button-but {
-    background: var(--IRIS, #4D5AE5);
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     letter-spacing: 0.04em;
@@ -117,6 +135,9 @@ h1 {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    padding-top: 188px;
+    padding-right: 472;
+    padding-bottom: 48px;
 
 }
 
@@ -136,6 +157,15 @@ button:focus {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+}
+
+.hidden-element {
+    display: none;
+}
+
+.section-2-items {
+    display: flex;
+    flex-direction: row;
 }
 
 /* section 3 */
