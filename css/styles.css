@@ -8,20 +8,36 @@ address {
     font-style: normal;
 }
 
-/* nav */
+img {
+    display: block;
+}
 
-.nav {
+/* nav */
+div {
+    display: flex;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* header */
+
+.header {
     background: var(--WHITE, #FFF);
     display: flex;
     justify-content: space-around;
+    border-bottom: 1px solid #e7e9fc;
 }
 
-.navv {
+.nav {
     display: flex;
     align-items: center;
 }
 
-.web {
+.logo {
     color: var(--IRIS, #4D5AE5);
     font-size: 18px;
     font-weight: 700;
@@ -30,6 +46,7 @@ address {
     text-decoration: none;
     font-family: "Raleway", sans-serif;
     line-height: 1.17;
+    margin-right: 76px;
 }
 
 .studio {
@@ -41,6 +58,7 @@ address {
     text-decoration: none;
     font-family: "Raleway", sans-serif;
     line-height: 1.17;
+    margin-right: 76px;
 }
 
 a:hover {
@@ -59,7 +77,7 @@ address:focus {
     color: #404bbf;
 }
 
-.nav-lists-item {
+.nav-list-item {
     color: var(--NAVY-BLUE, #2E2F42);
     font-size: 16px;
     font-weight: 500;
@@ -72,9 +90,8 @@ address:focus {
 ul {
     list-style: none;
 }
-    
 
-.adress-list-item {
+.header-address {
     color: var(--SLATE, #434455);
     font-size: 16px;
     font-weight: 400;
@@ -85,9 +102,9 @@ ul {
     font-family: Roboto;
 }
 
-.adress-list-item-2 {
+.header-address-list {
     display: flex;
-    align-items: center;
+    gap: 40px;
 }
 
 .adress-list-type {
@@ -97,14 +114,18 @@ ul {
 
 .nav-list {
     display: flex;
-    align-items: center;
+    gap: 40px;
 }
 
+.nav-item {
+    padding: 24px 0;
+}
 
 /* section 1 */
  
-.section-sec-tion {
+.section-1 {
     background: var(--NAVY-BLUE, #2E2F42);
+    padding: 188px 0;
 }
 
 h1 {
@@ -117,16 +138,22 @@ h1 {
     font-family: Roboto;
 }
   
-.button-butoon-on {
+.section-1-button {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
     background-color: #4D5AE5;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.button-button-but {
+.section-1-header {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     letter-spacing: 0.04em;
@@ -135,9 +162,7 @@ h1 {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    padding-top: 188px;
-    padding-right: 472;
-    padding-bottom: 48px;
+    max-width: 496px;
 
 }
 
@@ -159,19 +184,30 @@ button:focus {
     letter-spacing: 0.02em;
 }
 
-.hidden-element {
-    display: none;
+/* section 2 */
+
+.visually-hidden {
+    overflow: hidden;
+}
+
+.section-2-list {
+    display: flex;
+    gap: 24px;
 }
 
 .section-2-items {
-    display: flex;
-    flex-direction: row;
+    width: calc((100% - 72px) / 4);
+}
+.section-2 {
+    padding: 120px 0;
 }
 
 /* section 3 */
 
-.section-section-section {
-    background-color: #F4F4FD
+.section-3 {
+    background-color: #F4F4FD;
+    padding: 120px 0;
+
 }
 
 .section-titles {
@@ -182,6 +218,7 @@ button:focus {
     line-height: 24px;
     letter-spacing: 0.4px;
     font-family: Roboto;
+    margin-bottom: 8px;
 }
 
 .section-photo {
@@ -198,12 +235,29 @@ button:focus {
     font-family: Roboto;
 }
 
-.li-li-li {
+.section-3-intems {
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-box {
+    padding: 32px 0;
+}
+
+.section-3-list {
+    display: flex;
+    gap: 24px;
 }
 
 /* section 4 */
-.section-title {
+
+.section-4 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-h2-title {
     color: var(--NAVY-BLUE, #2E2F42);
     text-align: center;
     font-size: 36px;
@@ -213,6 +267,24 @@ button:focus {
     text-transform: capitalize;
     font-family: Roboto;
     line-height: 1.11;
+    margin-bottom: 72px;
+}
+
+.section-4-list {
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.section-4-items {
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-box {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
 }
 
 /* footer */
@@ -220,6 +292,7 @@ button:focus {
 .footer {
     background: var(--NAVY-BLUE, #2E2F42);
     line-height: 1.17;
+    padding: 100px 0;
 }
 
 .web-footer {
@@ -231,6 +304,8 @@ button:focus {
     letter-spacing: 0.54px;
     text-transform: uppercase;
     line-height: 1.17;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .studio-footer {
@@ -250,4 +325,5 @@ button:focus {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
+    max-width: 264px;
 }
