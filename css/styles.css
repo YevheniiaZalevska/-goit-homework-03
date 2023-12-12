@@ -1,3 +1,19 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -13,8 +29,11 @@ img {
 }
 
 /* nav */
-div {
+
+.header-container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .container {
@@ -164,7 +183,9 @@ h1 {
     line-height: 1.07;
     letter-spacing: 0.02em;
     max-width: 496px;
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 
 button:hover {
@@ -179,6 +200,15 @@ button:focus {
 /* section 2 */
 
 .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
@@ -227,7 +257,7 @@ button:focus {
     font-family: Roboto;
 }
 
-.section-three-intems {
+.section-three-items {
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
@@ -249,7 +279,7 @@ button:focus {
     padding-bottom: 120px;
 }
 
-.section-main-h2-title {
+.section-main-h-two-title {
     color: var(--NAVY-BLUE, #2E2F42);
     text-align: center;
     font-size: 36px;
