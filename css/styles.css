@@ -70,14 +70,6 @@ img {
 
 .studio {
     color: var(--NAVY-BLUE, #2E2F42);
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: "Raleway", sans-serif;
-    line-height: 1.17;
-    margin-right: 76px;
 }
 
 a:hover {
@@ -147,16 +139,6 @@ ul {
     background: var(--NAVY-BLUE, #2E2F42);
     padding: 188px 0;
 }
-
-h1 {
-    color: var(--WHITE, #FFF);
-    text-align: center;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 60px;
-    letter-spacing: 1.12px;
-    font-family: Roboto;
-}
   
 .section-one-button {
     font-weight: 500;
@@ -171,14 +153,14 @@ h1 {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin:0 auto;
 }
 
 .section-one-main-header {
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.04em;
     color: #ffffff;
-    cursor: pointer;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -234,7 +216,6 @@ button:focus {
 
 .section-titles {
     color: var(--NAVY-BLUE, #2E2F42);
-    text-align: center;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
@@ -249,7 +230,6 @@ button:focus {
 
 .section-items {
     color: var(--SLATE, #434455);
-    text-align: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -270,6 +250,14 @@ button:focus {
 .section-three-list {
     display: flex;
     gap: 24px;
+}
+
+.section-titles-section-three {
+    text-align: center;
+}
+
+.section-items-section-three {
+    text-align: center;
 }
 
 /* section 4 */
